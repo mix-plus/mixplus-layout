@@ -1,3 +1,3 @@
-# grpc-skeleton
+# go-mixplus-layout
 
-gRPC development skeleton
+go-mixplus development layout
