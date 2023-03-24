@@ -1,6 +1,6 @@
 module github.com/mix-plus/mixplus-layout
 
-go 1.19
+go 1.17
 
 require (
 	github.com/envoyproxy/protoc-gen-validate v0.9.1
