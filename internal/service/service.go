@@ -1,9 +1,9 @@
 package service
 
 import (
-	"api1/internal/svc"
+	"github.com/mix-plus/mixplus-layout/internal/svc"
 
-	hello "api1/api/hello/v1"
+	hello "github.com/mix-plus/mixplus-layout/api/hello/v1"
 
 	"github.com/google/wire"
 )

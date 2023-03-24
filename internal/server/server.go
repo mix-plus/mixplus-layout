@@ -1,8 +1,8 @@
 package server
 
 import (
-	"api1/internal/service"
-	"api1/internal/svc"
+	"github.com/mix-plus/mixplus-layout/internal/service"
+	"github.com/mix-plus/mixplus-layout/internal/svc"
 	"net/http"
 
 	"github.com/google/wire"

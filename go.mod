@@ -1,4 +1,4 @@
-module api1
+module github.com/mix-plus/mixplus-layout
 
 go 1.19
 

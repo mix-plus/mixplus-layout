@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	hello "api1/api/hello/v1"
+	hello "github.com/mix-plus/mixplus-layout/api/hello/v1"
 )
 
 func (h *HelloService) SayHello(ctx context.Context, req *hello.HelloReq) (*hello.HelloResp, error) {

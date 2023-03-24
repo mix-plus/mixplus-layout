@@ -1,9 +1,9 @@
 package server
 
 import (
-	hello "api1/api/hello/v1"
-	"api1/internal/config"
-	"api1/internal/service"
+	hello "github.com/mix-plus/mixplus-layout/api/hello/v1"
+	"github.com/mix-plus/mixplus-layout/internal/config"
+	"github.com/mix-plus/mixplus-layout/internal/service"
 	"context"
 	"net/http"
 

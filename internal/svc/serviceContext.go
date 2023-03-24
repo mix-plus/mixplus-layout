@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"api1/internal/config"
+	"github.com/mix-plus/mixplus-layout/internal/config"
 
 	"github.com/google/wire"
 )

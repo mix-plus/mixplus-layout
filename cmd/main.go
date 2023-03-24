@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"api1/internal/config"
+	"github.com/mix-plus/mixplus-layout/internal/config"
 
 	"github.com/mix-plus/core/conf"
 )

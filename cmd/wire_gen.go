@@ -7,10 +7,10 @@
 package main
 
 import (
-	"api1/internal/config"
-	"api1/internal/server"
-	"api1/internal/service"
-	"api1/internal/svc"
+	"github.com/mix-plus/mixplus-layout/internal/config"
+	"github.com/mix-plus/mixplus-layout/internal/server"
+	"github.com/mix-plus/mixplus-layout/internal/service"
+	"github.com/mix-plus/mixplus-layout/internal/svc"
 )
 
 // Injectors from wire.go:
