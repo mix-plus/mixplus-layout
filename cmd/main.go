@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/mix-plus/mixplus-layout/internal/config"
+	"github.com/mix-plus/mixplus-skeleton/internal/config"
 
 	"github.com/mix-plus/core/conf"
 )

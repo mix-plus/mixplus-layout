@@ -1,4 +1,4 @@
-module github.com/mix-plus/mixplus-layout
+module github.com/mix-plus/mixplus-skeleton
 
 go 1.17
 

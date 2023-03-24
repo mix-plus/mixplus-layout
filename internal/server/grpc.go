@@ -1,11 +1,11 @@
 package server
 
 import (
-	"github.com/mix-plus/mixplus-layout/internal/config"
-	"github.com/mix-plus/mixplus-layout/internal/service"
-	"github.com/mix-plus/mixplus-layout/internal/svc"
+	"github.com/mix-plus/mixplus-skeleton/internal/config"
+	"github.com/mix-plus/mixplus-skeleton/internal/service"
+	"github.com/mix-plus/mixplus-skeleton/internal/svc"
 
-	hello "github.com/mix-plus/mixplus-layout/api/hello/v1"
+	hello "github.com/mix-plus/mixplus-skeleton/api/hello/v1"
 
 	"github.com/mix-plus/go-mixplus/mrpc"
 	"google.golang.org/grpc"

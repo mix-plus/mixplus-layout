@@ -1,11 +1,12 @@
 package server
 
 import (
-	hello "github.com/mix-plus/mixplus-layout/api/hello/v1"
-	"github.com/mix-plus/mixplus-layout/internal/config"
-	"github.com/mix-plus/mixplus-layout/internal/service"
 	"context"
 	"net/http"
+
+	hello "github.com/mix-plus/mixplus-skeleton/api/hello/v1"
+	"github.com/mix-plus/mixplus-skeleton/internal/config"
+	"github.com/mix-plus/mixplus-skeleton/internal/service"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 )

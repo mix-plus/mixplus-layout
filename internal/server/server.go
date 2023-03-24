@@ -1,9 +1,10 @@
 package server
 
 import (
-	"github.com/mix-plus/mixplus-layout/internal/service"
-	"github.com/mix-plus/mixplus-layout/internal/svc"
 	"net/http"
+
+	"github.com/mix-plus/mixplus-skeleton/internal/service"
+	"github.com/mix-plus/mixplus-skeleton/internal/svc"
 
 	"github.com/google/wire"
 	"github.com/mix-plus/go-mixplus/mrpc"
