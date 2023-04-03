@@ -12,7 +12,7 @@ import (
 )
 
 func NewHttpServer(c *config.Config, srv *service.HelloService) *http.Server {
-	hs := &http.Server{}
+	httpServer := &http.Server{}
 	ctx := context.Background()
 	ctx, cancel := context.WithCancel(ctx)
 	defer cancel()
@@ -23,8 +23,8 @@ func NewHttpServer(c *config.Config, srv *service.HelloService) *http.Server {
 	if err != nil {
 		panic(err)
 	}
-	hs.Addr = c.ApiConf.Addr
-	hs.Handler = mux
+	httpServer.Addr = c.ApiConf.Addr
+	httpServer.Handler = mux
 
-	return hs
+	return httpServer
 }

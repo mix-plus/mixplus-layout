@@ -13,7 +13,7 @@ init:
 
 .PHONY: run
 run:
-	go run -tags wireinject cmd/main.go cmd/wire_gen.go
+	go run ./...
 
 .PHONY: build
 build:
@@ -21,7 +21,7 @@ build:
 
 .PHONY: api
 api:
-	bug generate
+	buf generate
 
 .PHONY: generate
 # generate

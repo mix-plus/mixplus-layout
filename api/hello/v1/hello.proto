@@ -10,8 +10,7 @@ option go_package = "demo.api.hello;v1";
 service Hello {
   rpc sayHello(HelloReq) returns (HelloResp) {
     option (google.api.http) = {
-      post: "/v1/dmeo/hello"
-      body: "*"
+      get: "/v1/demo/hello"
     };
   }
 }

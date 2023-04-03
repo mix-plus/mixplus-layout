@@ -14,9 +14,9 @@ import (
 var ProviderSet = wire.NewSet(NewGrpcServer, NewHttpServer)
 
 type AppServer struct {
-	SvcCtx *svc.ServiceContext
-	Hs     *http.Server
-	gs     *mrpc.RpcServer
+	SvcCtx     *svc.ServiceContext
+	HttpServer *http.Server
+	GrpcServer *mrpc.RpcServer
 
 	HelloService *service.HelloService
 }
@@ -25,18 +25,18 @@ func NewApp(svcCtx *svc.ServiceContext, helloService *service.HelloService, hs *
 	return &AppServer{
 		SvcCtx:       svcCtx,
 		HelloService: helloService,
-		Hs:           hs,
-		gs:           gs,
+		HttpServer:   hs,
+		GrpcServer:   gs,
 	}, nil
 }
 
 func (a *AppServer) Run() {
 
 	go func() {
-		a.Hs.ListenAndServe()
+		a.HttpServer.ListenAndServe()
 	}()
 
-	a.gs.Start()
+	a.GrpcServer.Start()
 
-	defer a.gs.Stop()
+	defer a.GrpcServer.Stop()
 }
